@@ -1,27 +1,27 @@
 {
-	"id": "1936af9a-7392-401e-9c56-cdf4e5c75290",
-	"brand": "Apple",
-	"name": "Macbook Pro",
+	"id": "cab5e46d-e32d-494d-9d55-50f334b5dede",
+	"brand": "Lenovo",
+	"name": "Thinkpad P53",
 	"cpu": {
 		"brand": "AMD",
 		"name": "Ryzen 3 PRO 3200GE",
-		"number_cores": 7,
-		"number_threads": 7,
-		"min_ghz": 2.7420302691393084,
-		"max_ghz": 3.81705840129995
+		"number_cores": 5,
+		"number_threads": 10,
+		"min_ghz": 3.1364921326034874,
+		"max_ghz": 4.456393768254672
 	},
 	"ram": {
-		"value": "44",
+		"value": "21",
 		"unit": "GIGABYTE"
 	},
 	"gpus": [
 		{
 			"brand": "NVIDIA",
 			"name": "GTX 1660-Ti",
-			"min_ghz": 1.4862981871468883,
-			"max_ghz": 1.5578328534123946,
+			"min_ghz": 1.0793084005697842,
+			"max_ghz": 1.9278222628304267,
 			"memory": {
-				"value": "3",
+				"value": "5",
 				"unit": "GIGABYTE"
 			}
 		}
@@ -30,33 +30,33 @@
 		{
 			"driver": "SSD",
 			"memory": {
-				"value": "664",
+				"value": "853",
 				"unit": "GIGABYTE"
 			}
 		},
 		{
 			"driver": "HDD",
 			"memory": {
-				"value": "5",
+				"value": "6",
 				"unit": "TERABYTE"
 			}
 		}
 	],
 	"screen": {
-		"size_inch": 15.146051,
+		"size_inch": 16.286497,
 		"resolution": {
-			"width": 3749,
-			"height": 2109
+			"width": 3617,
+			"height": 2035
 		},
-		"panel": "OLED",
+		"panel": "IPS",
 		"multitouch": true
 	},
 	"keyboard": {
 		"layout": "QWERTY",
 		"backlit": true
 	},
-	"weight_kg": 1.9154872449359428,
-	"price_usd": 1601.2511113029082,
+	"weight_kg": 2.876743759246229,
+	"price_usd": 2986.1686765669183,
 	"release_year": 2016,
-	"updated_at": "2020-11-19T07:47:24.223200Z"
+	"updated_at": "2020-11-19T08:51:21.262905Z"
 }
