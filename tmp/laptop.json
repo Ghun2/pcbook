@@ -1,27 +1,27 @@
 {
-	"id": "cab5e46d-e32d-494d-9d55-50f334b5dede",
-	"brand": "Lenovo",
-	"name": "Thinkpad P53",
+	"id": "45ded11a-19f7-4cb6-9b03-c10b6a67e2d9",
+	"brand": "Dell",
+	"name": "Alienware",
 	"cpu": {
 		"brand": "AMD",
-		"name": "Ryzen 3 PRO 3200GE",
-		"number_cores": 5,
-		"number_threads": 10,
-		"min_ghz": 3.1364921326034874,
-		"max_ghz": 4.456393768254672
+		"name": "Ryzen 7 PRO 2700U",
+		"number_cores": 8,
+		"number_threads": 12,
+		"min_ghz": 2.46979248949461,
+		"max_ghz": 3.2645413983351355
 	},
 	"ram": {
-		"value": "21",
+		"value": "8",
 		"unit": "GIGABYTE"
 	},
 	"gpus": [
 		{
 			"brand": "NVIDIA",
-			"name": "GTX 1660-Ti",
-			"min_ghz": 1.0793084005697842,
-			"max_ghz": 1.9278222628304267,
+			"name": "RTX 2060",
+			"min_ghz": 1.3353942249515067,
+			"max_ghz": 1.453727376132051,
 			"memory": {
-				"value": "5",
+				"value": "3",
 				"unit": "GIGABYTE"
 			}
 		}
@@ -30,7 +30,7 @@
 		{
 			"driver": "SSD",
 			"memory": {
-				"value": "853",
+				"value": "644",
 				"unit": "GIGABYTE"
 			}
 		},
@@ -43,20 +43,20 @@
 		}
 	],
 	"screen": {
-		"size_inch": 16.286497,
+		"size_inch": 15.494192,
 		"resolution": {
-			"width": 3617,
-			"height": 2035
+			"width": 5230,
+			"height": 2942
 		},
 		"panel": "IPS",
-		"multitouch": true
+		"multitouch": false
 	},
 	"keyboard": {
-		"layout": "QWERTY",
+		"layout": "AZERTY",
 		"backlit": true
 	},
-	"weight_kg": 2.876743759246229,
-	"price_usd": 2986.1686765669183,
-	"release_year": 2016,
-	"updated_at": "2020-11-19T08:51:21.262905Z"
+	"weight_kg": 2.1195986555862607,
+	"price_usd": 2294.5693066001336,
+	"release_year": 2019,
+	"updated_at": "2020-11-20T06:36:06.412689Z"
 }
