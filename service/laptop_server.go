@@ -36,6 +36,10 @@ func (s *LaptopServer) CreateLaptop(ctx context.Context, req *pb.CreateLaptopReq
 		laptop.Id = id.String()
 	}
 
+	if err := in_error.ContextError(ctx); err != nil {
+		return nil, err
+	}
+
 	err := s.Store.Save(laptop)
 	if err != nil {
 		code := codes.Internal
@@ -53,3 +57,25 @@ func (s *LaptopServer) CreateLaptop(ctx context.Context, req *pb.CreateLaptopReq
 	}
 	return res, nil
 }
+
+func (s *LaptopServer) SearchLaptop(req *pb.SearchLaptopRequest, stream pb.LaptopService_SearchLaptopServer) error {
+	filter := req.GetFilter()
+	log.Printf("receive a search-laptop request with filter: %v", filter)
+
+	err := s.Store.Search(stream.Context(), filter, func(laptop *pb.Laptop) error {
+		res := &pb.SearchLaptopResponse{
+			Laptop: laptop,
+		}
+		err := stream.Send(res)
+		if err != nil {
+			return err
+		}
+		log.Printf("sent laptop with id: %s", laptop.GetId())
+		return nil
+	})
+	if err != nil {
+		return status.Errorf(codes.Internal, "unexpected error: %v", err)
+	}
+	return nil
+}
+
