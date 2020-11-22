@@ -1,5 +1,5 @@
 syntax = "proto3";
-package grpctuto.pcbook;
+package pcbook;
 option go_package = ".;pb";
 
 message Screen {
